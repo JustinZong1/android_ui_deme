@@ -1,0 +1,56 @@
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ImageView;
+
+public class MainActivity extends Activity {
+	private static final OnClickListener Lextener = null;
+	private Button bt1,bt2,bt3,bt4;
+	private ImageView image1;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		bt1=(Button) findViewById(R.id 
+
+.button1);
+		bt2=(Button) findViewById(R.id 
+
+.button1);
+		bt3=(Button) findViewById(R.id 
+
+.button3);
+		bt4=(Button) findViewById(R.id 
+
+.button4);
+		
+		//bt1.setOnClickListener(Lextener);
+		bt2.setOnClickListener(Lextener);
+		bt3.setOnClickListener(Lextener);
+		bt4.setOnClickListener(Lextener);
+		
+		image1=(ImageView)findViewById(R.id 
+
+.imageView1);
+		
+		
+		
+	}
+	public void changeImage(View view){
+		//事件处理
+		image1.setImageResource(R.drawable.pc5);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+}
